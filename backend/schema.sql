@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS farminvest;
+USE farminvest;
+
+CREATE TABLE investments (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    farmer_name VARCHAR(100) NOT NULL,
+    amount DECIMAL(10,2) NOT NULL,
+    crop VARCHAR(100) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
